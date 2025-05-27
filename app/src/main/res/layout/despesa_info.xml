@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="horizontal"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:background="#ECFFDD"
+    android:elevation="14dp">
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:layout_gravity="center_vertical">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/despesa"
+            android:textSize="19sp"
+            android:textColor="#000"
+            android:textFontWeight="700"
+            android:layout_marginStart="10.79dp">
+
+        </TextView>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/valor"
+            android:textColor="#FF0000"
+            android:textFontWeight="300"
+            android:textSize="12sp"
+            android:layout_marginStart="10.79dp"
+            android:layout_marginEnd="226dp">
+        </TextView>
+    </LinearLayout>
+
+    <ImageView
+        android:layout_width="51dp"
+        android:layout_height="51dp"
+        android:src="@drawable/netflix"
+        android:layout_margin="10.79dp"
+        >
+    </ImageView>
+</LinearLayout>

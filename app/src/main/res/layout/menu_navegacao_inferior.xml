@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="horizontal"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="#30AFF2">
+
+    <ImageButton
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_weight="1"
+        android:src="@drawable/home_24px"
+        android:background="@android:color/transparent"
+        android:contentDescription="@string/icone_home"
+        android:padding="16dp"
+        >
+    </ImageButton>
+
+    <ImageButton
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_weight="1"
+        android:src="@drawable/monitoring_24px"
+        android:background="@android:color/transparent"
+        android:padding="16dp"
+        >
+
+    </ImageButton>
+
+    <ImageButton
+        android:layout_width="65dp"
+        android:layout_height="wrap_content"
+        android:src="@drawable/add_24px"
+        android:drawablePadding="8dp"
+        android:background="@drawable/circulo_redondo"
+        android:layout_gravity="center"
+        android:paddingStart="17dp"
+        android:paddingEnd="17dp"
+        android:paddingTop="11dp"
+        android:paddingBottom="11dp"
+        android:layout_margin="5dp"
+        >
+    </ImageButton>
+
+    <ImageButton
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_weight="1"
+        android:src="@drawable/savings_24px"
+        android:drawablePadding="8dp"
+        android:background="@android:color/transparent"
+        android:padding="16dp"
+        >
+
+    </ImageButton>
+
+    <ImageButton
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_weight="1"
+        android:src="@drawable/attach_money_24px"
+        android:background="@android:color/transparent"
+        android:padding="16dp"
+        >
+
+    </ImageButton>
+</LinearLayout>
