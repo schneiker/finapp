@@ -21,4 +21,16 @@ class FinancaRepository(private val dao: FinancaDao) {
     suspend fun deletar(financa: Financa) = withContext(Dispatchers.IO) {
         dao.deletar(financa)
     }
+    suspend fun atualizarPorNome(
+        nome: String,
+        novoValor: Double,
+        novaData: String,
+        novoRecorrente: Boolean
+    ) {
+        dao.atualizarPorNome(nome, novoValor, novaData, novoRecorrente)
+    }
+
+    suspend fun deletarPorNome(nome: String) {
+        dao.deletarPorNome(nome)
+    }
 }

@@ -37,5 +37,56 @@ class MainActivity : AppCompatActivity() {
             v.setPadding(systemBars.left, systemBars.top, systemBars.right, systemBars.bottom)
             insets
         }
-    }
-}
+
+    }}
+
+/*
+        REGISTRAR NOVA FINANÇA PADRÃO*********************************************
+        lifecycleScope.launch {
+            val novaFinanca = Financa(
+                nome = "Netflix",
+                valor = 50.00,
+                data = "30/12/2025",
+                recorrente = true
+            )
+            repository.inserir(novaFinanca)
+        }
+        LER TODAS AS FINANÇAS***************************************************
+        lifecycleScope.launch {
+            val todasFinancas = repository.listar()
+        }
+        DELETAR*****************************************************
+         lifecycleScope.launch {
+            repository.deletarPorNome("Disney+")
+            }
+
+
+         ATUALIZAR************************************************
+
+        lifecycleScope.launch {
+            // Atualizar uma financa com nome "Spotify"
+            repository.atualizarPorNome(
+                nome = "Netflix",
+                novoValor = 35000.00,
+                novaData = "05/01/2026",
+                novoRecorrente = false
+            )
+
+        }
+        MOSTRAR TODAS AS FINANÇAS NO LOGCAT*****************************************************************
+                lifecycleScope.launch {
+            val todasFinancas = repository.listar()
+
+            todasFinancas.forEach { financa ->
+                Log.d(
+                    "FinancaLog",
+                    "ID: ${financa.id}, Nome: ${financa.nome}, Valor: R$${financa.valor}, " +
+                            "Data: ${financa.data}, Recorrente: ${financa.recorrente}"
+                )
+            }
+        }
+
+
+
+
+        */

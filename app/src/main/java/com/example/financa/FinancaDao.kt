@@ -15,4 +15,15 @@ interface FinancaDao {
 
     @Delete
     suspend fun deletar(financa: Financa)
+
+    @Query("UPDATE financas SET valor = :novoValor, data = :novaData, recorrente = :novoRecorrente WHERE nome = :nome")
+    suspend fun atualizarPorNome(
+        nome: String,
+        novoValor: Double,
+        novaData: String,
+        novoRecorrente: Boolean
+    )
+
+    @Query("DELETE FROM financas WHERE nome = :nome")
+    suspend fun deletarPorNome(nome: String)
 }
