@@ -22,6 +22,12 @@ class RegisterActivity : AppCompatActivity() {
             v.setPadding(systemBars.left, systemBars.top, systemBars.right, systemBars.bottom)
             insets
         }
+        val transactionType = intent.getStringExtra("transactionType")
+        if (transactionType == "credit") {
+            findViewById<RadioButton>(R.id.radioBankStatementButton).isChecked = true
+        } else if (transactionType == "debit") {
+            findViewById<RadioButton>(R.id.radioRegisterButton).isChecked = true
+        }
     }
 
     fun destroyButton(view: View) {

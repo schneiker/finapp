@@ -42,4 +42,9 @@ class MainActivity : AppCompatActivity() {
         val intent = Intent(this, BankStatementActivity::class.java)
         startActivity(intent)
     }
+    fun goAddGainActivity(view: View) {
+        val intent = Intent(this, RegisterActivity::class.java)
+        intent.putExtra("transactionType", "credit")
+        startActivity(intent)
+    }
 }
